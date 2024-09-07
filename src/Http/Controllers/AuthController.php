@@ -1,12 +1,12 @@
 <?php
 
-namespace Shanerutter\LaravelAdminEmailTwoFactor\Http\Controllers;
+namespace Wareon\LaravelAdminEmailTwoFactor\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 use Encore\Admin\Controllers\AuthController as BaseAuthController;
-use Shanerutter\LaravelAdminEmailTwoFactor\AuthEmailTwoFactor;
-use Shanerutter\LaravelAdminEmailTwoFactor\Helpers\TwoFactorValidationHelper;
+use Wareon\LaravelAdminEmailTwoFactor\AuthEmailTwoFactor;
+use Wareon\LaravelAdminEmailTwoFactor\Helpers\TwoFactorValidationHelper;
 
 class AuthController extends BaseAuthController
 {

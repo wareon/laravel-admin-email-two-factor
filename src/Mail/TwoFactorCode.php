@@ -1,6 +1,6 @@
 <?php
 
-namespace Shanerutter\LaravelAdminEmailTwoFactor\Mail;
+namespace Wareon\LaravelAdminEmailTwoFactor\Mail;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;

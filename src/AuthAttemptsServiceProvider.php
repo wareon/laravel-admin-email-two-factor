@@ -1,11 +1,11 @@
 <?php
 
-namespace Shanerutter\LaravelAdminEmailTwoFactor;
+namespace Wareon\LaravelAdminEmailTwoFactor;
 
 use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
-use Shanerutter\LaravelAdminEmailTwoFactor\Http\Middleware\AuthAdminEmailTwoFactor;
+use Wareon\LaravelAdminEmailTwoFactor\Http\Middleware\AuthAdminEmailTwoFactor;
 
 class AuthAttemptsServiceProvider extends ServiceProvider
 {
@@ -36,7 +36,7 @@ class AuthAttemptsServiceProvider extends ServiceProvider
 
         if ($this->app->runningInConsole() && $assets = $extension->assets()) {
             $this->publishes(
-                [$assets => public_path('vendor/shanerutter/laravel-admin-email-two-factor')],
+                [$assets => public_path('vendor/wareon/laravel-admin-email-two-factor')],
                 AuthEmailTwoFactor::$group
             );
         }

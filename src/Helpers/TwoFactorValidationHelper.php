@@ -1,14 +1,14 @@
 <?php
 
-namespace Shanerutter\LaravelAdminEmailTwoFactor\Helpers;
+namespace Wareon\LaravelAdminEmailTwoFactor\Helpers;
 
 use Encore\Admin\Auth\Database\Administrator;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Session;
-use Shanerutter\LaravelAdminEmailTwoFactor\AuthEmailTwoFactor;
-use Shanerutter\LaravelAdminEmailTwoFactor\Mail\TwoFactorCode;
+use Wareon\LaravelAdminEmailTwoFactor\AuthEmailTwoFactor;
+use Wareon\LaravelAdminEmailTwoFactor\Mail\TwoFactorCode;
 
 class TwoFactorValidationHelper
 {
@@ -33,7 +33,7 @@ class TwoFactorValidationHelper
         return $fa['completed'];
     }
 
-    public function twoFactorPendingCodeValidation(Administrator $admin): bool
+    public static function twoFactorPendingCodeValidation(Administrator $admin): bool
     {
         return !self::twoFactorCompleted($admin);
     }

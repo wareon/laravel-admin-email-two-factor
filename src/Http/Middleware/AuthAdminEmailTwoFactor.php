@@ -1,12 +1,12 @@
 <?php
 
-namespace Shanerutter\LaravelAdminEmailTwoFactor\Http\Middleware;
+namespace Wareon\LaravelAdminEmailTwoFactor\Http\Middleware;
 
 use App\Traits\ApiGenericResponse;
 use Closure;
 use Encore\Admin\Auth\Database\Administrator;
 use Illuminate\Http\Request;
-use Shanerutter\LaravelAdminEmailTwoFactor\Helpers\TwoFactorValidationHelper;
+use Wareon\LaravelAdminEmailTwoFactor\Helpers\TwoFactorValidationHelper;
 
 class AuthAdminEmailTwoFactor
 {

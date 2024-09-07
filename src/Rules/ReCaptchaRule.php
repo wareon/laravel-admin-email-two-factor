@@ -1,15 +1,15 @@
 <?php
 
-namespace Shanerutter\LaravelAdminEmailTwoFactor\Rules;
+namespace Wareon\LaravelAdminEmailTwoFactor\Rules;
 
 use Illuminate\Contracts\Validation\Rule;
 use ReCaptcha\ReCaptcha;
-use Shanerutter\LaravelAdminEmailTwoFactor\AuthEmailTwoFactor;
+use Wareon\LaravelAdminEmailTwoFactor\AuthEmailTwoFactor;
 
 class ReCaptchaRule implements Rule
 {
 
-    private string $errorMsg = '';
+    private $errorMsg = '';
 
     /**
      * Create a new rule instance.

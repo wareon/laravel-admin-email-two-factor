@@ -8,7 +8,7 @@ A new "email" field is added to the database as laravel-admin does not have this
 ### Installation
 
 ```
-composer require shanerutter/laravel-admin-email-two-factor
+composer require wareon/laravel-admin-email-two-factor
 ```
 
 ### Migration
